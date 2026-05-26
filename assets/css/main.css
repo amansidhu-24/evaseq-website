@@ -1687,7 +1687,21 @@ section,
   gap: 10px;
   backdrop-filter: blur(10px);
 }
-
+.home-link {
+  width: fit-content;
+  margin: 0 auto 28px;
+  padding: 10px 18px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background: rgba(79, 216, 229, 0.12); 
+  color: var(--accent-color);
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+}
 .pulse-dot {
   width: 10px;
   height: 10px;
@@ -1737,43 +1751,7 @@ section,
   line-height: 1.8;
   color: #5d6870;
 }
-
-.countdown-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-bottom: 50px;
-}
-
-.count-box {
-  padding: 34px 20px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(79, 216, 229, 0.15);
-  backdrop-filter: blur(14px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-}
-
-.count-box:hover {
-  transform: translateY(-6px);
-}
-
-.count-box h2 {
-  font-size: 56px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: var(--accent-color);
-}
-
-.count-box span {
-  font-size: 15px;
-  font-weight: 600;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
+ 
 .coming-newsletter {
   max-width: 620px;
   margin: auto;
@@ -1818,34 +1796,7 @@ section,
   transform: translateY(-2px);
   box-shadow: 0 14px 24px rgba(73, 212, 226, 0.35);
 }
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  margin-top: 40px;
-}
-
-.social-links a {
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.8);
-  color: var(--accent-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  border: 1px solid rgba(79, 216, 229, 0.15);
-  transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-  transform: translateY(-5px);
-  background: var(--accent-color);
-  color: #fff;
-}
-
+ 
 .bg-glow {
   position: absolute;
   border-radius: 50%;
@@ -1878,9 +1829,7 @@ section,
     font-size: 52px;
   }
 
-  .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 }
 
 @media (max-width: 767px) {
@@ -1914,9 +1863,4 @@ section,
     height: 56px;
   }
 }
-
-@media (max-width: 575px) {
-  .countdown-grid {
-    grid-template-columns: 1fr;
-  }
-}
+ 
