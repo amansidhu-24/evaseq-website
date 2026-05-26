@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>EVASEQ - Coming Soon</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <main class="coming-soon-page">
+      <div class="bg-glow bg-glow-1"></div>
+      <div class="bg-glow bg-glow-2"></div>
+
+      <div class="container">
+        <div class="coming-wrapper" data-aos="fade-up" data-aos-delay="100">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            Launching Soon
+          </div>
+
+          <a href="index.html"><img src="assets/img/evaseq-logo.png" alt="EVASEQ" class="coming-logo" /></a>
+
+          <h1>
+            The Future Of
+            <span>Molecular Diagnostics</span>
+            Is Almost Here
+          </h1>
+
+          <p>
+            We’re building a powerful next-generation platform for IVF clinics and molecular laboratories. Stay tuned
+            for an innovative experience designed to simplify and accelerate genomic workflows.
+          </p>
+
+          <div class="countdown-grid">
+            <div class="count-box">
+              <h2 id="days">30</h2>
+              <span>Days</span>
+            </div>
+
+            <div class="count-box">
+              <h2 id="hours">12</h2>
+              <span>Hours</span>
+            </div>
+
+            <div class="count-box">
+              <h2 id="minutes">45</h2>
+              <span>Minutes</span>
+            </div>
+
+            <div class="count-box">
+              <h2 id="seconds">22</h2>
+              <span>Seconds</span>
+            </div>
+          </div>
+
+          <form class="coming-newsletter">
+            <input type="email" placeholder="Enter your email address" />
+            <button type="submit">Notify Me</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer-16 footer position-relative">
+      <div class="container">
+        <div class="footer-main" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-start">
+            <!-- Left -->
+            <div class="col-lg-2">
+              <div class="brand-section">
+                <a href="index.html" class="logo d-flex align-items-center mb-4">
+                  <img src="assets/img/evaseq-logo.png" alt="EVASEQ" class="footer-logo" />
+                </a>
+
+                <p class="brand-description">
+                  4231 Balboa Ave #738 <br />
+                  San Diego, CA 92117
+                </p>
+              </div>
+            </div>
+
+            <!-- Middle Links -->
+            <div class="col-lg-4">
+              <div class="footer-nav-wrapper">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="nav-column">
+                      <nav class="footer-nav">
+                        <a href="index.html">Home</a>
+                        <a href="#mission">Our Mission</a>
+                        <a href="#about">About Us</a>
+                        <a href="#workflow">End-To-End PGT-A Workflow</a>
+                        <a href="#features">EVASEQ Features</a>
+                        <a href="#system">Complementary System</a>
+                      </nav>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="nav-column">
+                      <nav class="footer-nav">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2">
+              <div class="footer-email">
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:info@evaseq.com">info@evaseq.com</a>
+              </div>
+            </div>
+            <!-- Right -->
+            <div class="col-lg-4">
+              <div class="footer-newsletter-box">
+                <p>Stay updated with the latest news from Evaseq. Sign up for our newsletter today!</p>
+
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Enter your email" />
+
+                  <button type="submit">Subscribe</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="bottom-content text-center">
+              <div class="copyright">
+                <p>© 2026 EVASEQ. All rights reserved. Dedicated to your health and well-being.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Vendor JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <script>
+      AOS.init();
+
+      const launchDate = new Date("Jun 30, 2026 00:00:00").getTime();
+
+      const timer = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = launchDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+        if (distance < 0) {
+          clearInterval(timer);
+
+          document.querySelector(".countdown-grid").innerHTML = "<h2>We Are Live 🚀</h2>";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>
