@@ -1013,6 +1013,7 @@ section,
 }
 
 .hero .hero-visual {
+  height: 600px; 
   position: relative; 
 }
 
