@@ -84,7 +84,9 @@
                 </p>
 
                 <div class="hero-actions" data-aos="fade-right" data-aos-delay="600">
-                  <a href="coming-soon.html" class="btn btn-primary">Book A Free Demo</a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                    Book A Free Demo
+                  </a>
                 </div>
               </div>
             </div>
@@ -357,12 +359,14 @@
                 adopt and scale next-generation sequencing workflows.
               </p>
               <div class="molecular-actions">
-                <a href="coming-soon.html" class="btn-gradient">
+                <a href="#" class="btn-gradient" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
                   Explore Our Kits
                   <i class="bi bi-box-seam"></i>
                 </a>
 
-                <a href="coming-soon.html" class="btn-outline-custom"> Book A Free Demo </a>
+                <a href="#" class="btn-outline-custom" data-bs-toggle="modal" data-bs-target="#comingSoonModal">
+                  Book A Free Demo
+                </a>
               </div>
             </div>
             <div class="col-lg-4">
@@ -453,7 +457,47 @@
         </div>
       </div>
     </footer>
+    <!-- Coming Soon Modal -->
+    <div
+      class="modal fade"
+      id="comingSoonModal"
+      tabindex="-1"
+      aria-labelledby="comingSoonModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content coming-soon-modal">
+          <div class="modal-body">
+            <!-- Close -->
+            <button type="button" class="btn-close modal-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
 
+            <!-- Background Glow -->
+            <div class="bg-glow bg-glow-1"></div>
+            <div class="bg-glow bg-glow-2"></div>
+
+            <div class="coming-wrapper">
+              <div class="badge-pill">
+                <span class="pulse-dot"></span>
+                Launching Soon
+              </div>
+
+              <img src="assets/img/evaseq-logo.png" alt="EVASEQ" class="coming-logo" />
+
+              <h1>
+                The Future Of
+                <span>Molecular Diagnostics</span>
+                Is Almost Here
+              </h1>
+
+              <p>
+                We’re building a powerful next-generation platform for IVF clinics and molecular laboratories. Stay
+                tuned for an innovative experience designed to simplify and accelerate genomic workflows.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Scroll Top -->
     <a href="#!" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i

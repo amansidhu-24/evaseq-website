@@ -1864,3 +1864,55 @@ section,
   }
 }
  
+/* Modal Wrapper */
+.coming-soon-modal {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.coming-soon-modal .modal-body {
+  position: relative;
+  overflow: hidden;
+  border-radius: 36px;
+  background:
+    radial-gradient(circle at top left, rgba(79, 216, 229, 0.18), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0, 126, 140, 0.12), transparent 35%),
+    #f8fdff;
+  padding: 90px 40px;
+}
+
+/* Close Button */
+.modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 10;
+  background-color: #ffffff !important;
+  border-radius: 50%;
+  opacity: 1;
+  padding: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Modal Animation */
+.modal.fade .modal-dialog {
+  transform: scale(0.9);
+  transition: all 0.25s ease;
+}
+
+.modal.show .modal-dialog {
+  transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .coming-soon-modal .modal-body {
+    padding: 70px 20px;
+  }
+
+  .modal-close-btn {
+    top: 16px;
+    right: 16px;
+  }
+}
